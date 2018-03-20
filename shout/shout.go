@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/mccainca/trashcan2spot/spotify"
+	"github.com/mccainca/Icy2Spotify/spotify"
 )
 
 type icyparseerror struct {

@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/mccainca/trashcan2spot/config"
-	"github.com/mccainca/trashcan2spot/shout"
-	"github.com/mccainca/trashcan2spot/spotify"
+	"github.com/mccainca/Icy2Spotify/config"
+	"github.com/mccainca/Icy2Spotify/shout"
+	"github.com/mccainca/Icy2Spotify/spotify"
 )
 
 var appConfig = config.Config{}
