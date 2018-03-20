@@ -98,11 +98,11 @@ func (c CreatePlaylistCommand) Run(url string, playlist string) {
 
 		spTrack, err := c.client.FindTrack(fmt.Sprintf("%s %s", artist, track))
 		if err != nil {
-			log.Printf("Unable to add track: %s by %s to playlist", track, artist)
+			log.Printf("Unable to add track: %s by %s to playlist : %s", track, artist, err)
+		} else {
+			c.client.AddTrackToPlaylist(playlist, spTrack)
+			log.Printf("Added %s by %s to playlist", track, artist)
 		}
-		c.client.AddTrackToPlaylist(playlist, spTrack)
-		log.Printf("Added %s by %s to playlist", track, artist)
-
 	}
 }
 
